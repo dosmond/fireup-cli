@@ -1,7 +1,7 @@
 {
   "name": "@dosmond37/firebase-storage-cli",
   "description": "Upload anything, right from your command line.",
-  "version": "0.0.11",
+  "version": "0.0.12",
   "author": "Amruth Pillai @AmruthPillai",
   "bin": {
     "firestorecli": "./bin/run"
@@ -67,6 +67,7 @@
   "repository": "dosmond/fireup-cli",
   "scripts": {
     "posttest": "eslint . --ext .ts --config .eslintrc",
+    "prepack": "rm -rf lib && tsc -b && oclif-dev readme",
     "version": "oclif-dev readme && git add README.md"
   },
   "types": "lib/index.d.ts"
