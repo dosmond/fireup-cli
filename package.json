@@ -1,8 +1,8 @@
 {
-  "name": "fireup-cli",
+  "name": "firebase-storage-cli",
   "description": "Upload anything, right from your command line.",
   "version": "0.0.8",
-  "author": "Amruth Pillai @AmruthPillai",
+  "author": "Amruth Pillai @AmruthPillai (edited by Daniel Osmond)",
   "bin": {
     "fireup": "./bin/run"
   },
@@ -45,7 +45,7 @@
     "/npm-shrinkwrap.json",
     "/oclif.manifest.json"
   ],
-  "homepage": "https://github.com/AmruthPillai/fireup-cli",
+  "homepage": "/https://github.com/dosmond/fireup-cli",
   "keywords": [
     "oclif",
     "firebase",
