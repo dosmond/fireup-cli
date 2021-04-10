@@ -1,10 +1,10 @@
 {
-  "name": "@dosmond/firebase-storage-cli",
+  "name": "@dosmond37/firebase-storage-cli",
   "description": "Upload anything, right from your command line.",
-  "version": "0.0.8",
+  "version": "0.0.10",
   "author": "Amruth Pillai @AmruthPillai",
   "bin": {
-    "fireup": "./bin/run"
+    "firestorecli": "./bin/run"
   },
   "bugs": "https://github.com/AmruthPillai/fireup-cli/issues",
   "dependencies": {
