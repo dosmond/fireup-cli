@@ -69,7 +69,7 @@ export default class Upload extends Command {
     const historyPath = path.join(this.config.configDir, 'history.json');
     try {
       history = await fs.readJSON(historyPath);
-    } catch (error) {}
+    } catch (error) { }
     history = history.filter((x) => x.name !== event.name);
     history.unshift(event);
     await fs.writeJSON(historyPath, history, { spaces: 2 });
@@ -107,6 +107,7 @@ export default class Upload extends Command {
     // Upload File using Cloud Storage SDK
     const response = await bucket.upload(filePath, {
       public: flags.public,
+      resumable: false
     });
     const file = response[0];
 
