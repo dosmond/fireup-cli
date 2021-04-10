@@ -1,7 +1,7 @@
 {
   "name": "@dosmond37/firebase-storage-cli",
   "description": "Upload anything, right from your command line.",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "author": "Amruth Pillai @AmruthPillai",
   "bin": {
     "firestorecli": "./bin/run"
