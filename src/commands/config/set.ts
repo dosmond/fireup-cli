@@ -38,6 +38,7 @@ export default class ConfigSet extends Command {
 
     // Check if Config Directory exists, otherwise create directory
     const configPath = path.join(this.config.configDir, 'config.json');
+    this.log(configPath)
     await fs.ensureDir(this.config.configDir);
 
     // Initialize Empty Object to bypass TSLint Errors
@@ -49,7 +50,7 @@ export default class ConfigSet extends Command {
     // Read Existing Values to Append
     try {
       userConfig = await fs.readJSON(configPath);
-    } catch (error) {}
+    } catch (error) { }
 
     // Set Service Account JSON Path
     if (args.key === 'service.account') {

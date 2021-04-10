@@ -111,7 +111,7 @@ export default class History extends Command {
     const historyPath = path.join(this.config.configDir, 'history.json');
     try {
       history = await fs.readJSON(historyPath);
-    } catch (error) {}
+    } catch (error) { }
 
     // Display History JSON if -v flag is set
     if (flags.view) {
