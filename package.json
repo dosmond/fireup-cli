@@ -1,5 +1,5 @@
 {
-  "name": "fireup-cli",
+  "name": "@dosmond/firebase-storage-cli",
   "description": "Upload anything, right from your command line.",
   "version": "0.0.8",
   "author": "Amruth Pillai @AmruthPillai",
@@ -46,7 +46,7 @@
     "/npm-shrinkwrap.json",
     "/oclif.manifest.json"
   ],
-  "homepage": "https://github.com/AmruthPillai/fireup-cli",
+  "homepage": "https://github.com/dosmond/fireup-cli",
   "keywords": [
     "oclif",
     "firebase",
@@ -65,10 +65,9 @@
       "@oclif/plugin-not-found"
     ]
   },
-  "repository": "AmruthPillai/fireup-cli",
+  "repository": "dosmond/fireup-cli",
   "scripts": {
     "posttest": "eslint . --ext .ts --config .eslintrc",
-    "prepack": "rm -rf lib && tsc -b && oclif-dev readme",
     "version": "oclif-dev readme && git add README.md"
   },
   "types": "lib/index.d.ts"
